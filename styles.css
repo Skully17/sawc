@@ -1,0 +1,60 @@
+.logo{
+    color: blue;
+    font-weight: 750;
+    font-size: 1.5em;
+    font-family: monospace;
+}
+
+.navBar{
+   background: blue !important;
+   font-family: monospace !important;
+}
+
+body{
+    background-color: cornflowerblue
+}
+
+.topicLogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+@media (max-width: 992px) { 
+    
+    .mainDiv{
+        margin: auto;
+        width: 80% !important;
+        height: autos;
+        padding: 10px;
+        background-color: white
+    }
+}
+
+.mainDiv{
+    margin: auto;
+    width: 80%;
+    height: autos;
+    padding: 10px;
+    background-color: white
+}
+
+.divSection {
+    margin: auto;
+}
+
+h1{
+    text-align: center
+}
+
+h4{
+    text-align: center;
+    color:cornflowerblue;
+    font-family: sans-serif;
+}
+
+p{
+    text-align: center;
+    font-family: sans-serif;
+}
