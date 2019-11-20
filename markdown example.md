@@ -1,7 +1,5 @@
-Markdown - A lightwieght Markup Language
+This will make the text a title
 =
-
-Markup is used for small documents that doesn\'t need to look really nice.
 
 # The More "\#"s
 ## There Are
@@ -10,31 +8,28 @@ Markup is used for small documents that doesn\'t need to look really nice.
 
 You need to add two spaces at the end of a paragraph to create a linebreak  
 
-_you can encase text with "\_"s to make it italic_  
-**you can encase text with "\*"s to make it bold**  
-``you can encase text with "`"s (not a single speachmark) to make it monospace``  
-~~you can encase text with 2 tilds ether side to make it strikethrough~~  
->you can use ">" to indent text
+_This will make the text italic_  
+**This will make the text bold**  
+``This will make the text monotext``  
+~~This will make the text strikethrough~~  
+>this will indent the text
 
-<mark>you can just use html by using the inline <tag></tag> format</mark>
+<mark>you can just use inline HTML in markdown if you want</mark>
 
-You can use "---" to add a line to the page.  
+You can use "---" to add a line to the page. Text directly above is made a header
+---
+with a breakline it's just a line
 
 ---
-An extra linebreak will need to be added so it's not made into a sub header like this.  
----
-You can make:
-* bullet point lists
-* by putting "* "
-* infront of text
+This makes:
+* bullet
+* point
+* lists
 
-You can make:
-1. A numbered list
-2. by putting "x. "
-3. infront of text
-4. where x is
-5. the number you want
+This makes:
+1. A
+2. numbered
+3. list
 
-[links can be made by using "\[text to show on page\](link/to/direct/to)"]()  
-![Image](lsbu.png)  
-images can be made buy using "\!\[alturnate text](image/address.png)"
+[This is the clickable text for the link](www.this_is_the_link.com)  
+![alturnate text if image fails to load](the/images/address.png)"
