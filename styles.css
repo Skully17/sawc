@@ -58,3 +58,15 @@ p{
     text-align: center;
     font-family: sans-serif;
 }
+
+.column {
+padding: 0px 20px;
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  display: table;
+  clear: both;
+}
