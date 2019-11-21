@@ -34,12 +34,11 @@ body{
 
 .mainDiv{
     margin: auto;
-    width: 80%;
+    width: 100%;
     height: autos;
     padding: 10px;
     background-color: white
 }
-
 .divSection {
     margin: auto;
 }
