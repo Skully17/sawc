@@ -76,3 +76,43 @@ padding: 0px 20px;
   display: table;
   clear: both;
 }
+
+ol
+{
+	margin-left: 40px;
+}
+
+.codes
+{
+	text-align: left;
+	background-color:#CCC;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 14px;
+	margin-left: 50px;
+	margin-right: 50px;
+	
+}
+
+#bluefont
+{
+	color:#06C;
+}
+
+#redfont
+{
+	color:#C00;
+}
+
+#greenfont
+{
+	color: #396;
+}
+
+
+.links
+{
+	color: #909;
+	font-size: 18px;
+	text-decoration: underline;
+	
+}

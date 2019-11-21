@@ -20,7 +20,7 @@
 
 <body>
   <div class="container" style="width: auto;">
-    <!-- <div class="container" style="width:50%"></div>-->
+   
     <div class="mainDiv">
 
       <nav class="navbar navbar-expand-md navbar-light">
@@ -55,47 +55,62 @@
       <hr class="m5">
 
       <div class="container">
-
-        <!-- <h1 class="display-4 text-center">Bootstrap<br> <small class="text-muted">What is Bootstrap?</small></h1> -->
         <img class="topicLogo img-fluid" src="nodejs.png" alt="nodejs logo">
       </div>
 
       <div>
 
-      <div class="sidenav">
-        <a href="#">Introduction</a>
-        <a href="#">About</a>
-        <a href="#">Syntax</a>
-        <a href="#">Cheat Sheet</a>
-      </div>
+      	
 
       <hr class="m5">
 
-
-
-
-      <section>
-        <h4>INTRODUCTION</h4>
-
-        <p class="subtitle">Node.js is an open source, cross-platform runtime
-          environment for developing server-side and networking applications.
-          Node.js applications are written in JavaScript, and can be run within
-          the Node.js runtime on OS X, Microsoft Windows, and Linux.</p>
-      </section>
+	     <section>
+    	    <h4>INTRODUCTION</h4>
+	
+    	    <p>Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. <br> Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.</p>
+        	<p>Simply ---> <em>Node.js = Runtime Environment + JavaScript Library</em></p>
+          	<p>You would find the simple basics of the Node.js scripting language below...</p>
+          	<br/>
+          	<p class="subtitle"><a class="links" href="https://rextester.com/l/nodejs_online_compiler" target="_blank"> Click Here for an online Node.js compiler</a></p>
+      	</section>
 
       <hr class="m5">
 
-      <section>
-        <h4>TOPIC</h4>
-        <p>TEXT</p>
-        <p>YOUR TOPIC</p>
+      	<section>
+        	<h5>1. REQUIRED ENVIRONMENT</h5>
+        	<p>To set up a local environment, the following two softwares are required:
+        		<ol type="i">
+        			<li><b><em>Text Editor</em></b> - Any type of text editor that is used to type a program. The source file need to be saved with a <b>.js</b> which is the Node.js extension.</li>
+        			<li><b><em>Node.js binary installables</em></b> - The Node.js installable archive file can be downloaded from <a href="https://nodejs.org/download/" target="_blank">Node.js Downloads</a> and installed appropriately according to the respective OS. This is required so that the Node.js interpretor can interpret the javascript source file as required. </li>
+        		</ol>
+               </p>
+        
+        	<hr>
+        
+        	<h5>2. STEP BY STEP APPROACH TO CREATE A SIMPLE APPLICATION</h5>
+        	<p>
+        		<ol type="i">
+        			<li><b><em>Import required modules</em></b> - use the require directive to load the http module and store the returned HTTP instance into an http variable. <br/><div class="codes">var http = require("http");</div></li>
+        			<br/>
+        			<li><b><em>Create server</em></b> - use the created http instance and call http.createServer() method to create a server instance and then we bind it at port 8081 using the listen method associated with the server instance. Pass it a function with parameters request and response. Write the sample implementation.<br/><div class="codes">http.createServer(<font id="bluefont">function</font> (request, response) {<br>
+   <font id="redfont">// Send the HTTP header <br>
+   // HTTP Status: 200 : OK <br>
+   // Content Type: text/plain <br></font>
+   response.writeHead(<font id="bluefont">200</font>, {'<font id="greenfont">Content-Type': 'text/plain</font>'});<br>
+<font id="redfont">// Send the response body as "Hello World"</font>response.<font id="bluefont">end</font>('<font id="greenfont">Hello World\n</font>');<br>
+}).listen(8081); <font id="redfont">// Console will print the message<br></font>
+console.log('<font id="greenfont">Server running at http://127.0.0.1:8081/</font>');<br></div></li>
+<br/>
+
+						<li><b><em>Testing request and response</em></b> - put step 1 and step 2 together in a source file with a <b>.js</b> extension, execute the source file, open the respective server url in any web browser and observe the result. </li>
+        			</ol>
+               	</p>
+        
+        <p></p>
       </section>
 
       <div class="divAside">
         <aside>
-          The aside tag defines some content aside from the content it is placed in.
-
-          The aside content should be related to the surrounding content.
         </aside>
       </div>
 
