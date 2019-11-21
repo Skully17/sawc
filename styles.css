@@ -8,10 +8,13 @@
 .navBar{
    background: blue !important;
    font-family: monospace !important;
+   
 }
 
+
 body{
-    background-color: cornflowerblue
+    background: url("back.jpg");
+	background-size: cover;
 }
 
 .topicLogo{
@@ -21,6 +24,7 @@ body{
     width: 30%;
 }
 
+
 @media (max-width: 992px) { 
     
     .mainDiv{
@@ -28,20 +32,32 @@ body{
         width: 80% !important;
         height: autos;
         padding: 10px;
-        background-color: white
+        background-color: transparent;
     }
 }
 
 .mainDiv{
     margin: auto;
-    width: 80%;
+    width: 100%;
     height: autos;
     padding: 10px;
-    background-color: white
+    background-color: transparent;
+}
+
+div
+{
+	background-color: transparent;
 }
 
 .divSection {
     margin: auto;
+	
+}
+
+section, aside
+{
+	background-color: white;
+	margin-left: 170px;
 }
 
 h1{
@@ -55,25 +71,30 @@ h4{
 }
 
 p{
-    text-align: justify;
-    font-family: sans-serif;
-    padding: 0px 20px 0px 20px
-}
-
-p.subtitle{
     text-align: center;
     font-family: sans-serif;
-    padding: 0px 20px 0px 20px
 }
 
-.column {
-padding: 0px 20px;
-  float: left;
-  width: 50%;
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; 
+  /*top: 0; 
+  left: 0;*/
+  background-color: #AEF7F9;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  display: table;
-  clear: both;
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: grey;
 }

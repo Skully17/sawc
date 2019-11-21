@@ -1,31 +1,11 @@
 <!doctype html>
 <html lang="en">
 
-<script type="text/javascript">
-function ToggleJavaText() {
-  var x = document.getElementById("ToggleJava");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("#TogglejQuery").toggle();
-  $("#TogglejQueryText").click(function(){
-    $("#TogglejQuery").toggle();
-  });
-});
-</script>
-
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -35,16 +15,16 @@ $(document).ready(function(){
   <link rel="stylesheet" href="styles.css">
 
 
-  <title>Techopedia - jQuery</title>
+  <title>TECHOPEDIA - jQuery</title>
 </head>
 
-<body onload="ToggleJavaText()">
+<body>
   <div class="container" style="width: auto;">
     <!-- <div class="container" style="width:50%"></div>-->
     <div class="mainDiv">
 
       <nav class="navbar navbar-expand-md navbar-light">
-        <a class="logo" href="index.html">TECHOPEDIA</a>
+        <a class="logo" href="home.html">TECHOPEDIA</a>
         <div class="container">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +33,7 @@ $(document).ready(function(){
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="home.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Bootstrap.html">Bootstrap</a>
@@ -85,58 +65,24 @@ $(document).ready(function(){
 
 
       <section>
-        <h4>jQuery</h4>
-        <p class="subtitle">jQuery is an open-source JavaScript library that allows web designers to use the contained tools to implement functionality without writing all of the code for it.</p>
+        <h4>(YOUR TOPIC)</h4>
+
+        <p>TEXT ABOUT YOUR TOPIC</p>
       </section>
 
       <hr class="m5">
 
       <section>
-        <h4>About jQuery</h4>
-        <p>Initially released in 2006, jQuery was created to simplify DOM (Document Object Model) manipulation as well as event handling.
-        There are lots of tasks commonly done with JavaScript (such as hiding elements, or creating sliding panels) that require multiple lines of code to
-        achieve. jQuery makes JavaScript programming much simpler by taking these tasks and putting them into methods that can run with one line of code.
-        jQuery is currently being used by over 70% of the top 10 million websites, so it is fair to say that it's a standard way to apply JavaScript.
-        When making a webpage using jQuery, you will have your HTML file for the structure of the page, a CSS file to apply styles and edit the appearance,
-        and a jQuery file to add interactivity and behaviour. Alternatively, you could just connect your HTML to an existing jQuery instance being hosted online,
-        such as those hosted by Google or Microsoft. You may do this if you don't want to download or edit jQuery yourself, as users will still get the same experience.</p>
-        
-        <h4>JavaScript vs jQuery</h4>
-        <p>In this section I will demonstrate the code difference between JavaScript and jQuery by completing the same action using each tool. The effect I
-        would like to achieve is to hide and show some content by clicking a button.<br>
-        <br>
-        First I will do this using JavaScript: <button onclick="ToggleJavaText()">Toggle</button></p>      
-        <p id="ToggleJava">In order to achieve this effect, I had to put the following code into the &ltscript&gt tag of this HTML page:<br>
-        <br>
-        <b>function myFunction() {<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;var x = document.getElementById("HiddenContentDIV");<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;if (x.style.display === "none") {<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x.style.display = "block";<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;} else {<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x.style.display = "none";<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-        }</b><br>
-        <br>
-        In addition to this, I needed to create a &ltDIV&gt that I could hide, and write the small code required to display the button itself, however these are also
-        required steps for making this using jQuery, so I will not go into detail about this process.<br>
-        <br></p>
-
-        <p>Then, the same effect using jQuery: <button id="TogglejQueryText">Toggle</button></p>
-        <p id="TogglejQuery">To use jQuery for this action, all I had to do was put the following code into &ltscript&gt of this page (ensuring the page was first connected to a jquery
-        library):<br>
-        <br>
-        <b>$(document).ready(function(){<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;$("#ButtonName").click(function(){<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#HiddenContentDIV").toggle();<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;});<br>
-        });<b></p>
-
+        <h4>TOPIC</h4>
+        <p>TEXT</p>
+        <p>YOUR TOPIC</p>
       </section>
-
-
 
       <div class="divAside">
         <aside>
+          The aside tag defines some content aside from the content it is placed in.
+
+          The aside content should be related to the surrounding content.
         </aside>
       </div>
 
