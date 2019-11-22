@@ -23,6 +23,7 @@
    
     <div class="mainDiv">
 
+	<!--Navigation pane -->
       <nav class="navbar navbar-expand-md navbar-light">
         <a class="logo" href="index.html">TECHOPEDIA</a>
         <div class="container">
@@ -54,13 +55,14 @@
 
       <hr class="m5">
 
+	<!--Topic Title Logo -->
       <div class="container">
         <img class="topicLogo img-fluid" src="nodejs.png" alt="nodejs logo">
       </div>
 
       <div>
 
-      	
+ <!--Content of the page starts here-->     	
 
       <hr class="m5">
 
@@ -77,20 +79,40 @@
       <hr class="m5">
 
       	<section>
+        	<article>
         	<h5>1. REQUIRED ENVIRONMENT</h5>
         	<p>To set up a local environment, the following two softwares are required:
-        		<ol type="i">
+       		  <ol type="i">
         			<li><b><em>Text Editor</em></b> - Any type of text editor that is used to type a program. The source file need to be saved with a <b>.js</b> which is the Node.js extension.</li>
-        			<li><b><em>Node.js binary installables</em></b> - The Node.js installable archive file can be downloaded from <a href="https://nodejs.org/download/" target="_blank">Node.js Downloads</a> and installed appropriately according to the respective OS. This is required so that the Node.js interpretor can interpret the javascript source file as required. </li>
-        		</ol>
+        			<li><b><em>Node.js binary installables</em></b> - The Node.js installable archive file can be downloaded from <a href="https://nodejs.org/download/" target="_blank">Node.js Downloads</a> and installed appropriately according to the respective OS. This is required so that the Node.js interpretor can interpret the javascript source file as required. <br/><br/>
+                    	<aside>
+                        <div class="tipicon"><img src="tipicon.jpg" class="tipicon"></div><br/><br/>
+                        <p><em><b><font id="redfont">TIP:</font></b></em></p>
+                        <p>NPM is a package manager for Node.js packages or modules. This program is installed in your computer when Node.js is installed. Therefore, packages can be easily downloaded by telling NPM to download the required package in a command line interface. For example:<br/>
+                    C:\Users\Your Name>npm install upper-case<br/>
+                    Once the module is installed, it can be imported directly into any node.js file.
+                     	</p>
+                   	  </aside>
+                    </li>
+       		  </ol>
                </p>
+               </article>
+               <br/><br/>
         
         	<hr>
-        
+        	<article>
         	<h5>2. STEP BY STEP APPROACH TO CREATE A SIMPLE APPLICATION</h5>
         	<p>
         		<ol type="i">
-        			<li><b><em>Import required modules</em></b> - use the require directive to load the http module and store the returned HTTP instance into an http variable. <br/><div class="codes">var http = require("http");</div></li>
+        			<li><b><em>Import required modules</em></b> - use the require directive to load the http module and store the returned HTTP instance into an http variable. <br/><div class="codes">var http = require("http");</div><br/>
+                    <aside>
+                    Just as modules can be imported using the <b>require</b> function, your own modules can be created and included in the application. Firstly, the module needs to be saved into a .js module file using an <b>export</b> function and then imported into any of your node.js files.  The following is an example of creating a module that returns the current date and time:<br/>
+                     <div class="codes">exports.myDateTime = <font id="bluefont">function</font> () {<br/>
+  <font id="bluefont">return</font> Date();<br/>
+};<br/></div><br/>
+
+                    </aside>
+                  </li>
         			<br/>
         			<li><b><em>Create server</em></b> - use the created http instance and call http.createServer() method to create a server instance and then we bind it at port 8081 using the listen method associated with the server instance. Pass it a function with parameters request and response. Write the sample implementation.<br/><div class="codes">http.createServer(<font id="bluefont">function</font> (request, response) {<br>
    <font id="redfont">// Send the HTTP header <br>
@@ -107,6 +129,44 @@ console.log('<font id="greenfont">Server running at http://127.0.0.1:8081/</font
                	</p>
         
         <p></p>
+        
+        </article>
+        
+        <hr>
+        
+        <article>
+        <h5>3. OTHER BASIC IMPORTANT SYNTAXES</h5>
+        	<p>
+   		  <ol type="i">
+        			<li><b><em>File System</em></b> - use the <b>require()</b> method to include the file system module.<br/>
+                    <div class="codes">var fs = require("fs");</div>
+                    It is used to do the following tasks:<br/>
+                    <ol type="a" class="subol">
+                    <li>Read files - Reads files in your computer using the <font id="redfont">fs.readFile()</font> method</li> 
+                    <li>Create or Update files - Create new files or append to existing files in your computer using the <font id="redfont">fs.appendFile()</font>, <font id="redfont">fs.open()</font> or <font id="redfont">fs.writeFile()</font> methods</li>
+                    <li>Delete files - Delete files that have a File System module using the <font id="redfont">fs.unlink()</font> method</li> 
+                    <li>Rename files - Rename files that have a File System module using the <font id="redfont">fs.rename()</font> method</li> 
+                    <li>Upload files - Upload files using the 'Formidable' module. First, write a node.js file with an upload field. Import the Formidable module to be able to parse the uploaded file once it reaches the server, so that the file gets placed on a temporary folder on your computer. Finally, find the path directory of the saved file using the <font id="redfont">parse()</font> method and move it to your destined folder. </li><br/>
+                    </ol>
+                    </li>
+   			<li><b><em>URL Module</em></b> - using this built-in module, the URL of a website can be split into readable parts. For example, <br/>
+                    <div class="codes"><font id="bluefont">var</font> url = require('<font id="redfont">url</font>');<br/>
+<font id="bluefont">var</font> adr = '<font id="redfont">http://localhost:8080/default.htm?year=2017<font id="greenfont2"></font>&amp;month=february</font>'<br/>
+<font id="bluefont">var</font> q = url.parse(adr, <font id="bluefont">true</font>);<br/>
+
+console.log(q.host); <font id="greenfont">//returns 'localhost:8080'</font><br/>
+console.log(q.pathname); <font id="greenfont">//returns '/default.htm' </font><br/>
+console.log(q.search); <font id="greenfont">//returns '?year=2017&amp;month=february' </font><br/>
+
+<font id="bluefont">var</font> qdata = q.query; <font id="greenfont">//returns an object: { year: 2017, month: 'february' }</font><br/>
+console.log(qdata.month); <font id="greenfont">//returns 'february'</font><br/></div>
+			</li><br/>
+            <li><b><em>Email Module</em></b> - using the 'Nodemailer' built-in module, e-mails can be sent from your server.<br/>
+            
+            </li>
+   		  </ol>
+               </p>   
+        </article>
       </section>
 
       <div class="divAside">
@@ -117,6 +177,15 @@ console.log('<font id="greenfont">Server running at http://127.0.0.1:8081/</font
     </div>
   </div>
   </div>
+  <br/>
+  <hr>
+  
+  <!-- Footer -->
+	<footer align="center">
+		<div class="container">&copy; Design by: David, John, Steven and Shazna
+		</div>
+	</footer>
+
 
 <!--Bootstrap Javascript-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

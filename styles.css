@@ -10,7 +10,7 @@
    font-family: monospace !important;
 }
 
-body{
+body{ /*Style for the whole body*/
     background-color: cornflowerblue
 }
 
@@ -20,6 +20,8 @@ body{
     margin-right: auto;
     width: 30%;
 }
+
+/*Responsiveness of the mainDiv*/
 
 @media (max-width: 992px) { 
     
@@ -32,40 +34,41 @@ body{
     }
 }
 
-.mainDiv{
+.mainDiv{ /*Style for mainDiv class*/
     margin: auto;
     width: 100%;
     height: autos;
     padding: 10px;
     background-color: white
 }
-.divSection {
+
+.divSection { /*Style for divSection class*/
     margin: auto;
 }
 
-h1{
-    text-align: center
+h1, h2, h3{ /*Style for all h1, h2 and h3 headings*/
+    text-align: center;
 }
 
-h4{
+h4{ /*Style for all h4 headings*/
     text-align: center;
     color:cornflowerblue;
     font-family: sans-serif;
 }
 
-p{
+p{ /*Style for all paragraphs*/
     text-align: justify;
     font-family: sans-serif;
     padding: 0px 20px 0px 20px
 }
 
-p.subtitle{
+p.subtitle{ /*Style for subtitle class which is located inside paragraphs*/
     text-align: center;
     font-family: sans-serif;
     padding: 0px 20px 0px 20px
 }
 
-.column {
+.column { /*Style for column class*/
 padding: 0px 20px;
   float: left;
   width: 50%;
@@ -77,12 +80,17 @@ padding: 0px 20px;
   clear: both;
 }
 
-ol
+ol /*Used to indent all ordered lists*/
 {
 	margin-left: 40px;
 }
 
-.codes
+.subol /*Style for subol class - used to indent 'a' type ordered lists*/
+{
+	margin-left: 60px;
+}
+
+.codes /*Style for codes class*/
 {
 	text-align: left;
 	background-color:#CCC;
@@ -93,26 +101,115 @@ ol
 	
 }
 
-#bluefont
+#bluefont /*Style for bluefont id - used to make font blue*/
 {
 	color:#06C;
 }
 
-#redfont
+#redfont /*Style for redfont id - used to make font red*/
 {
 	color:#C00;
 }
 
-#greenfont
+#greenfont /*Style for greenfont id - used to make font green*/
 {
 	color: #396;
 }
 
 
-.links
+.links /*Style for link class*/
 {
 	color: #909;
 	font-size: 18px;
 	text-decoration: underline;
 	
 }
+
+aside /*Styles for all aside tags - will be yellow*/
+{
+	background-color:#FFC;
+	font-style:italic;
+}
+
+.tipicon /*Small icon for tips*/
+{
+	height: 50px;
+	width: 50px;
+	float: left;
+	
+}
+
+footer /*Styles for the footer*/
+{
+	background-color: white;
+}
+
+/*Image gallery in the home page*/
+
+
+div.gallery {
+  border: 1px solid #ccc;
+  height: 450px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Responsiveness for the image gallery in the home page*/
+@media only screen and (max-width: 1024px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  
+  div.gallery img {
+  	width: 100px;
+  	height: 100px;
+	} 
+  
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+  
+  div .gallery
+  { 
+	height: 300px;
+  }
+  
+  div.gallery img {
+  	width: 100px;
+  	height: 100px;
+	}
+}
+
