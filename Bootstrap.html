@@ -6,7 +6,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -14,8 +13,22 @@
   <!--Stylesheet-->
   <link rel="stylesheet" href="styles.css">
 
+<style>
+  ul { 
+    display:table;
+     margin:0 auto;
+    }
+  
+  .exampleImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
-  <title>Techopedia - Bootstrap</title>
+</style>
+
+  <title>TECHNOPEDIA - Bootstrap</title>
 </head>
 
 <body>
@@ -35,7 +48,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="Bootstrap.html">Bootstrap</a>
               </li>
               <li class="nav-item">
@@ -56,38 +69,118 @@
 
       <div class="container">
 
-        <!-- <h1 class="display-4 text-center">Bootstrap<br> <small class="text-muted">What is Bootstrap?</small></h1> -->
         <img class="topicLogo img-fluid" src="bootstrap.png" alt="bootstrap logo">
       </div>
 
       <hr class="m5">
 
-
-
       <section>
-        <h4>(YOUR TOPIC)</h4>
+        <h4>What is Bootstrap?</h4>
 
-        <p class="subtitle">TEXT ABOUT YOUR TOPIC</p>
+        <p>Bootstrap is the most popular CSS framework that is used for developing responsive
+          websites with its primary focus on mobile and tablet devices. In a world where mobile devices are 
+          always in use, it is important to make sure that a web page is functional and has readable content 
+          throughout. It is compatible also with all the relevant browsers such as Chrome, Firefox, Opera etc.
+          On this web page I will explain and give an example of how Bootstrap can make a website responsive
+          and what it can do.</p>
+
+        <hr class="m5">
+
+          <section>
+
+        <h4>What Can Bootstrap Do/Benefits?</h4>
+
+        <p>First of all Bootstrap is easy to set up, it is possible to be able to create a responsive website 
+          within an hour. You do not need to know use HTML and CSS at a high level to use Bootstrap and comes 
+          great documentation.</p>
+
+        <p>Some other useful of features are the responsive classes using that make a certain block of 
+          content appear or hide only on devices based on the size of their screen, useful when you want to 
+          hide some content based on screen size.</p>
+        
+         <p>It can style HTML elements such as tables forms, buttons, images and icons.</p>
+
+        </section>
+
+          <hr class="m5">
+
+          <section>
+
+          <h4>Bootstrap Components</h4>
+            <p>Bootstrap comes with a useful list of components such as:
+
+              <ul>
+                <li>Dropdowns</li>
+                <li>Button groups</li>
+                <li>Navigation bar</li>
+                <li>Breadcrumbs</li>
+                <li>Labels and badges</li>
+                <li>Alerts</li>
+                <li>Progress bar</li>
+              </ul>
+            </p>
+
+            <p>Bootstrap can add components such as sliders, tabs, accordions etc. which not only improve the 
+                functionality of your website but also improve the appearance.
+                </p>
+
+              </section>
+
+                <hr class="m5">
+
+                <section>
+                
+        <h4>Responsiveness</h4>
+
+        <p>Bootstrap is built on responsive 12-column grids, layouts and components. As I said in the 
+          previously, Bootstrap is know mainly for its responsiveness, here is an example
+          below:</p>
+
+        <img src="bootstrap.png" alt="Bootstrap example" class="d-none d-sm-block img-fluid">
+
+        <p>&nbsp;</p>
+
+        <p>When using the Bootstrap classes 'img-fluid' and the visibility functions the page is in mobile view
+           the menu condenses, the text starts to stack and the Bootstrap logo image disappears, this is done because Bootstrap CSS link and the container class that comes with that components
+          with it.
+
+          If the web page is manually condensed then the image smoothly adapts to the screen size.
+        </p>
+
       </section>
 
       <hr class="m5">
 
       <section>
-        <h4>TOPIC</h4>
-        <p>TEXT</p>
-        <p>YOUR TOPIC</p>
+
+        <h4>How It was Implemented in the Site</h4>
+
+        <p>
+          <ul>
+          <li>The used for this website it a Bootstrap component, it also minimizes collapses when the 
+            screen is on mobile view.</li>
+          <li>The text on mobile and tablet view stacks so that all the content is readable.</li>
+        <li>The Bootstrap example image disappears when on mobile view.</li>
+        <li>I also added a Bootstrap CSS link in the head tags in the document to import their styles and responsiveness</li>
+        </ul>
+        </p>
       </section>
 
+<hr class="m-5">
+
       <div class="divAside">
-        <aside>
-          The aside tag defines some content aside from the content it is placed in.
-
-          The aside content should be related to the surrounding content.
-        </aside>
-      </div>
-
+      <aside>
+         FACT: Originally created by a designer and a developer at Twitter, Bootstrap has become one of the most 
+          popular front-end frameworks and open source projects in the world.
+      </aside>
+    </div>
     </div>
   </div>
+
+  <!--Bootstrap Javascript-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 
